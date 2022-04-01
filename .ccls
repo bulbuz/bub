@@ -1,0 +1,6 @@
+g++
+-Wall
+-Wextra
+%cpp -std=c++17
+-Iinclude
+-I.
