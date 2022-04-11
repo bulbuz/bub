@@ -2,6 +2,7 @@
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+#include "Utils.h"
 
 class Player {
 	public:
@@ -10,14 +11,14 @@ class Player {
 		void update();
 		void render(SDL_Renderer* renderer);
 		
-		static const int WIDTH = 20;
-		static const int HEIGHT = 20;
-		static const int VEL = 10;
+		static const int WIDTH = 100;
+		static const int HEIGHT = 100;
+		static const int VEL = 8;
 
 	private:
 		void move();
 
-		int mPosX, mPosY;
-		int mVelX, mVelY;
+		double VelX, VelY;
+		bool right, left, down, up;
 		SDL_Rect playerRect;
 };

@@ -1,3 +1,5 @@
 .git
 .ccls-cache
 .bin/debug/
+run.sh
+build.sh
