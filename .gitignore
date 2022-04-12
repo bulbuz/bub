@@ -3,3 +3,4 @@
 .bin/debug/
 run.sh
 build.sh
+.bin/debug/Main

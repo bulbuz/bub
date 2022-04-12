@@ -54,7 +54,12 @@ void Game::events() {
 }
 
 Game::~Game() {
+	SDL_DestroyRenderer(renderer);
 	SDL_DestroyWindow(window);
+	renderer = NULL;
+	window = NULL;
+
+	// Quit subsystems
 	IMG_Quit();
 	SDL_Quit();
 	std::cout << "Yay! Finished without errors! 😀" << std::endl;
